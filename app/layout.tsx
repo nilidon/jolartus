@@ -19,7 +19,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Jolart US - Venetian Plaster, Stucco & Microcement Studio NYC",
+  title: "Jolart US - Venetian Plaster, Stucco & Microcement NYC",
   description:
     "Transform your walls into art with Jolart US. Expert Venetian plaster, decorative stucco, and microcement services in NYC and Tri-State area. 6+ years of experience.",
   keywords: "venetian plaster, stucco, microcement, NYC, wall finishes, interior design, decorative plaster, New York",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   creator: "Jolart US",
   publisher: "Jolart US",
   openGraph: {
-    title: "Jolart US - Venetian Plaster Studio NYC",
+    title: "Jolart US - Venetian Plaster NYC",
     description:
       "Expert wall finishes and decorative plaster services in New York City. Transform your walls into art.",
     url: "https://jolartus.com",
@@ -39,13 +39,13 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Jolart US - Venetian Plaster Studio NYC",
+        alt: "Jolart US - Venetian Plaster NYC",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jolart US - Venetian Plaster Studio NYC",
+    title: "Jolart US - Venetian Plaster NYC",
     description: "Expert wall finishes and decorative plaster services in New York City",
     images: ["/og-image.png"],
   },
@@ -97,7 +97,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "Jolart US",
-              description: "Venetian plaster, stucco, and microcement studio in NYC",
+              description: "Venetian plaster, stucco, and microcement in NYC",
               url: "https://jolartus.com",
               telephone: "(347) 657-2890",
               email: "hello@jolartus.com",
