@@ -143,7 +143,7 @@ This message was sent from the Jolart US website contact form.
                 Need immediate assistance?
               </p>
               <p style="color: #1f1f1f; font-size: 16px; margin: 0;">
-                Call us at <a href="tel:+13476572890" style="color: #c9a06a; text-decoration: none; font-weight: bold;">(347) 657-2890</a>
+                Call us at <a href="tel:+13476572690" style="color: #c9a06a; text-decoration: none; font-weight: bold;">(347) 657-2690</a>
               </p>
             </div>
 
@@ -168,7 +168,7 @@ What happens next?
 - Begin transforming your walls into art
 
 Need immediate assistance?
-Call us at (347) 657-2890
+Call us at (347) 657-2690
 
 ---
 Jolart US - Studio
