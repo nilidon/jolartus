@@ -21,7 +21,7 @@ export async function POST(request: NextRequest) {
     // Send email using Resend
     const emailData = await resend.emails.send({
       from: "Jolart US Website <hello@jolartus.com>",
-      to: ["nilidonpepushaj@gmail.com"],
+      to: ["jolartus@gmail.com"],
       subject: `New Contact Form Submission from ${name}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #faf6f1;">
