@@ -59,14 +59,14 @@ const itemVariants = {
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 bg-cream">
+    <section id="services" className="py-14 sm:py-20 bg-cream">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-center mb-16"
+          className="text-center mb-10 sm:mb-16"
         >
           <h2 className="font-serif text-4xl lg:text-5xl font-light text-ink mb-4 gold-underline inline-block">
             Our Services

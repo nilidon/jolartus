@@ -14,13 +14,13 @@ export default function Hero() {
       {/* Subtle vignette overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-black/5 pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 py-16 sm:py-20 grid lg:grid-cols-2 gap-10 sm:gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-6 py-16 sm:py-20 grid lg:grid-cols-2 gap-6 sm:gap-12 items-center">
         {/* Left Content */}
         <motion.div
           initial={{ opacity: 0, y: 20 }} // Reduced movement for smoother animation
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, ease: "easeOut" }} // Faster animation
-          className="space-y-8"
+          className="space-y-8 mt-12 md:mt-0"
         >
           <div className="space-y-6">
             <motion.h1
@@ -109,7 +109,7 @@ export default function Hero() {
           initial={{ opacity: 0, x: 20 }} // Reduced movement for smoother animation
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }} // Faster animation
-          className="relative will-change-transform mt-8 md:mt-0" // Visible on mobile with spacing
+          className="relative will-change-transform mt-2 md:mt-0" // Visible on mobile with tighter spacing to badges
         >
           <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl mx-auto w-full max-w-sm sm:max-w-md md:max-w-none">
             <Image

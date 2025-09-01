@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-cream relative overflow-hidden">
+    <section id="about" className="py-14 sm:py-20 bg-cream relative overflow-hidden">
       {/* Plaster texture background */}
       <div className="absolute inset-0 opacity-30 plaster-texture" />
 
@@ -16,7 +16,7 @@ export default function About() {
           transition={{ duration: 0.3 }}
           className="max-w-4xl mx-auto text-center"
         >
-          <h2 className="font-fraunces text-4xl md:text-5xl font-bold text-ink mb-8 text-balance">About Jolart US</h2>
+          <h2 className="font-fraunces text-4xl md:text-5xl font-bold text-ink mb-6 sm:mb-8 text-balance">About Jolart US</h2>
 
           <div className="space-y-6 text-lg leading-relaxed text-stone">
             <motion.p
@@ -57,7 +57,7 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.3, delay: 0.4 }}
-              className="text-lg font-medium text-gold border-t border-sand pt-6 mt-8"
+              className="text-lg font-medium text-gold border-t border-sand pt-4 sm:pt-6 mt-6 sm:mt-8"
             >
               Serving all of New York City, Westchester County, Connecticut & New Jersey - Hamptons.
             </motion.p>
