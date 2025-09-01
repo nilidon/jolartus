@@ -66,14 +66,20 @@ export default function Hero() {
           </motion.div>
 
           {/* Trust indicators */}
-          {/* Mobile: condensed single-line */}
+          {/* Mobile: condensed single-line with gold separators */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
-            className="sm:hidden text-xs text-stone"
+            className="sm:hidden text-[11px] text-stone"
           >
-            6+ yrs • Residential & Commercial • NYC & Tri-State
+            <div className="flex items-center justify-center gap-2 whitespace-nowrap">
+              <span>6+ years experience</span>
+              <span className="inline-block w-1.5 h-1.5 bg-gold rounded-full" />
+              <span>Residential & Commercial</span>
+              <span className="inline-block w-1.5 h-1.5 bg-gold rounded-full" />
+              <span>NYC & Tri-State</span>
+            </div>
           </motion.div>
 
           {/* Desktop/Tablet: detailed badges */}
@@ -103,9 +109,9 @@ export default function Hero() {
           initial={{ opacity: 0, x: 20 }} // Reduced movement for smoother animation
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }} // Faster animation
-          className="relative will-change-transform hidden md:block" // Hide image on small screens
+          className="relative will-change-transform mt-8 md:mt-0" // Visible on mobile with spacing
         >
-          <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
+          <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl mx-auto w-full max-w-sm sm:max-w-md md:max-w-none">
             <Image
               src="/hero-venetian-plaster.png"
               alt="Elegant polished Venetian plaster wall with warm neutral tones"
