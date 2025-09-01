@@ -1,0 +1,24 @@
+{
+  "name": "Jolart US - Venetian Plaster Studio NYC",
+  "short_name": "Jolart US",
+  "description": "Expert Venetian plaster, stucco, and microcement services in NYC",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#c9a06a",
+  "background_color": "#faf6f1",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/",
+  "orientation": "portrait-primary",
+  "categories": ["business", "home-improvement", "construction"]
+}
