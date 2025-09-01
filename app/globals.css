@@ -142,6 +142,12 @@
     scroll-behavior: smooth;
   }
 
+  /* Prevent horizontal scrolling on mobile and small layout shifts */
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
   /* Improved focus styles for accessibility */
   *:focus-visible {
     @apply outline-2 outline-offset-2 outline-gold;

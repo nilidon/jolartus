@@ -10,11 +10,11 @@ export default function Hero() {
   }
 
   return (
-    <section className="plaster-bg min-h-screen flex items-center relative overflow-hidden">
+    <section className="plaster-bg min-h-[70vh] md:min-h-screen flex items-center relative overflow-hidden">
       {/* Subtle vignette overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-black/5 pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-6 py-16 sm:py-20 grid lg:grid-cols-2 gap-10 sm:gap-12 items-center">
         {/* Left Content */}
         <motion.div
           initial={{ opacity: 0, y: 20 }} // Reduced movement for smoother animation
@@ -27,7 +27,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-              className="font-serif text-5xl lg:text-7xl font-light text-ink leading-tight text-balance"
+              className="font-serif text-4xl sm:text-5xl lg:text-7xl font-light text-ink leading-tight text-balance"
             >
               Transforming Walls into Art.
             </motion.h1>
@@ -66,11 +66,22 @@ export default function Hero() {
           </motion.div>
 
           {/* Trust indicators */}
+          {/* Mobile: condensed single-line */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
-            className="flex flex-wrap gap-6 text-sm text-stone"
+            className="sm:hidden text-xs text-stone"
+          >
+            6+ yrs • Residential & Commercial • NYC & Tri-State
+          </motion.div>
+
+          {/* Desktop/Tablet: detailed badges */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
+            className="hidden sm:flex flex-wrap gap-6 text-sm text-stone"
           >
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-gold rounded-full" />
@@ -92,7 +103,7 @@ export default function Hero() {
           initial={{ opacity: 0, x: 20 }} // Reduced movement for smoother animation
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }} // Faster animation
-          className="relative will-change-transform" // Added will-change for GPU acceleration
+          className="relative will-change-transform hidden md:block" // Hide image on small screens
         >
           <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
             <Image
@@ -111,3 +122,4 @@ export default function Hero() {
     </section>
   )
 }
+
